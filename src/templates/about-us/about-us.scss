@@ -1,0 +1,226 @@
+.about-us {
+    $width: 100%;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .keyVisual-section {
+        background: url('/src/templates/assets/imgs/about_us/kv-img.jpg') center no-repeat;
+        height: 480px;
+        margin-top: 60px;
+
+        @media screen and (max-width: 1024px) {
+            height: 350px;
+            background-size: cover;
+        }
+
+        @media screen and (max-width: 767px) {
+            background: url('/src/templates/assets/imgs/about_us/kv-img-mo.jpg') no-repeat center;
+            height: 210px;
+            background-size: cover;
+        }
+
+        .kv-desc {
+            position: absolute;
+            top: 174px;
+            width: 100%;
+            left: 0;
+            text-align: center;
+
+            @media screen and (max-width: 1024px) {
+                top: 120px;
+            }
+
+            @media screen and (max-width: 767px) {
+                top: 65px;
+            }
+
+            .kv-text {
+                font-size: 32px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 42px;
+                padding-bottom: 20px;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+
+                @media screen and (max-width: 767px) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding-bottom: 10px;
+                }
+
+                @media screen and (max-width: 340px) {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+
+        }
+
+        .nav-container {
+            ul.nav-tab-list {
+                li {
+                    @media screen and (max-width: 767px) {
+                        &:nth-child(1) {
+                            -webkit-transition-delay: .28s;
+                            transition-delay: .28s;
+                        }
+
+                        &:nth-child(2) {
+                            -webkit-transition-delay: .21s;
+                            transition-delay: .21s;
+                        }
+
+                        &:nth-child(3) {
+                            -webkit-transition-delay: .14s;
+                            transition-delay: .14s;
+                        }
+
+                        &:nth-child(4) {
+                            -webkit-transition-delay: .07s;
+                            transition-delay: .07s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*company introduction section*/
+    .company-introduct-section {
+        padding: 93px 0 110px;
+
+        .company-title {
+            padding-bottom: 35px;
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 0;
+            margin-top: 0;
+
+            h3 {
+                margin: 0;
+                font-size: 22px;
+                line-height: 33px;
+                color: #4C4C4C;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 28px;
+                }
+
+                @media screen and (max-width:767px) {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                @media screen and (max-width:340px) {
+                    font-size: 18px;
+                }
+            }
+
+            &::before {
+                content: '';
+                width: 40px;
+                height: 6px;
+                background: #ffc107;
+                display: inline-block;
+                position: absolute;
+                top: 13px;
+                left: 0;
+
+                @media screen and (max-width: 767px) {
+                    width: 40px;
+                    height: 6px;
+                    top: 7px;
+                }
+            }
+
+            small {
+                color: #ACACAC;
+                font-size: 14px;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 14px;
+                }
+
+                @media screen and (max-width:767px) {
+                    font-size: 12px;
+                }
+            }
+
+            @media screen and (max-width:767px) {
+                padding-left: 54px;
+            }
+        }
+
+        .introduct-content {
+            overflow: hidden;
+        }
+
+        .introduct-text {
+            color: #4C4C4C;
+            background: #ECECEC;
+            padding: 64px 163px 64px 80px;
+            max-width: 974px;
+            width: 85%;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            line-height: 26px;
+            box-sizing: border-box;
+
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+                display: block;
+                padding: 30px 16px 174px;
+                font-size: 14px;
+            }
+
+            p {
+                padding-bottom: 20px;
+            }
+        }
+
+        .introduct-img {
+            width: 22%;
+            margin-left: -9%;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+
+            img {
+                width: 100%;
+                max-width: 491px;
+            }
+
+            @media screen and (max-width:1024px) {
+                width: 90%;
+                margin: 0 auto;
+                display: block;
+                margin-top: -144px;
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            padding: 40px 0 50px;
+
+            .introduct-contnet {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+        }
+    }
+
+    /*company introduction section end*/
+    
+    .transparent {
+        opacity: 0;
+    }
+
+}

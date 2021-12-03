@@ -1,0 +1,69 @@
+.product-service {
+
+    h1, h3, h4, p {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-fixed-top {
+        box-shadow: 0px 2px 20px 0px rgba(153, 153, 153, 0.5);
+    }
+    header {
+        .navbar-relative-top {
+            @media screen and (max-width: 767px) {
+                position: fixed;
+                display: block;
+            }
+        }
+    }
+
+    .kv-section {
+        background: url('/src/templates/assets/imgs/product-service/product-service-kv-img.jpg') center no-repeat;
+        height: 480px;
+        margin-top: 50px;
+
+        @media screen and (max-width: 1024px) {
+            height: 350px;
+            background-size: cover;
+        }
+
+        @media screen and (max-width: 767px) {
+            height: 210px;
+        }
+
+        .kv-container {
+            position: relative;
+
+            .kv-content {
+                margin-top: 10%;
+                color: #fff;
+
+                @media screen and (max-width: 767px) {
+                    width: $width;
+                    padding: 0 15px;
+                }
+
+                h1 {
+                    font-size: 42px;
+                    line-height: 56px;
+                    padding-bottom: 30px;
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                }
+
+                .kv-desc {
+                    font-size: 18px;
+                    line-height: 36px;
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}

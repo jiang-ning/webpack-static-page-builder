@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title><%= __('nav-product-service') %> - <%= __('product-service-data-services-title') %></title>
+    <link rel="icon" href="/assets/imgs/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/imgs/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="product-service <%= __('lang') %>">
+    <div class="brand-loading"></div>
+    <header>
+        <% var header = require('./../components/header.tpl') %>
+        <%= header() %>
+    </header>
+    <!--kv section Start-->
+    <div class="kv-section">
+        <div class="container kv-container">
+            <div class="kv-content">
+                <h1>
+                    <%= __('product-service-title') %>
+                </h1>
+                <p class="kv-desc">
+                    <%= __('product-service-desc') %>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--kv section End-->
+
+    <!-- more conetents here -->
+
+    <!--bottom-nav-->
+    <div class="bottom-nav">
+        <div class="container">
+            <ul>
+                <li><a href="/<%= __('lang') %>/index.html"><%= __('nav-home') %></a></li>
+                <li><a href="javascript:void(0);"><%= __('nav-product-service') %></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--bottom-nav end-->
+    <footer>
+        <% var footer = require('./../components/footer.tpl') %>
+        <%= footer() %>
+    </footer>
+</body>
+
+</html>

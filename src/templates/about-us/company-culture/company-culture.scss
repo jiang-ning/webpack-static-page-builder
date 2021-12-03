@@ -1,0 +1,69 @@
+.about-us.company-culture {
+    $width: 100%;
+
+    .keyVisual-section{
+        background: url('/src/templates/assets/imgs/about_us/company-culture/company-culture-kv-img.jpg') center no-repeat;
+        background-size: cover;
+        @media screen and (max-width:767px) {
+            background: url('/src/templates/assets/imgs/about_us/company-culture/company-culture-kv-img-mo.jpg') center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .company-culture-seciton {
+        padding: 77px 0 110px;
+
+        .culture-list {
+            ul {
+                li {
+                    list-style-type: none;
+
+                    .culture-item {
+                        padding-bottom: 28px;
+                        position: relative;
+                        font-size: 24px;
+                        padding-left: 22px;
+                        color: #4c4c4c;
+
+                        @media screen and (max-width: 1024px) {
+                            font-size: 22px;
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            font-size: 20px;
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            height: 8px;
+                            width: 8px;
+                            background: #ffc107;
+                            left: 0;
+                            top: 11px;
+
+                            @media screen and (max-width: 767px) {
+                                top: 10%;
+                            }
+                        }
+
+                        small {
+                            font-size: 16px;
+
+                            @media screen and (max-width: 767px) {
+                                display: block;
+                                padding-top: 10px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            padding: 40px 0 50px;
+        }
+    }
+}

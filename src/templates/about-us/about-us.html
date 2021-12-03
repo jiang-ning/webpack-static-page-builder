@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>
+        <%= __('about-us-title') %> -
+        <%= __('about-us-company-info') %>
+    </title>
+    <link rel="icon" href="/assets/imgs/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/imgs/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="about-us <%= __('lang') %>">
+    <div class="brand-loading"></div>
+    <header>
+        <% var header = require('./../components/header.tpl') %>
+        <%= header() %>
+    </header>
+    <!--kv section-->
+    <div class="keyVisual-section">
+        <div class="kv-nav">
+            <div class="container">
+                <div class="nav-container clearfix">
+                    <h2 class="nav-title">
+                        <span>
+                            <%= __('about-us-title') %></span>
+                        <b class="btn-arr"></b>
+                    </h2>
+                    <ul class="nav-tab-list">
+                        <li class="active"><a href="index.html">
+                            <%= __('about-us-company-info') %></a>
+                        </li>
+                        <li><a href="company-culture.html">
+                            <%= __('about-us-company-culture') %></a>
+                        </li>
+                        <li><a href="development-path.html">
+                            <%= __('about-us-development-path') %></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray"></div>
+        <div class="kv-desc">
+            <p class="kv-text">
+                <%= __('about-us-kv-desc') %>
+            </p>
+        </div>
+    </div>
+    <!--kv section end-->
+    <!--company Introduction-->
+    <div class="company-introduct-section">
+        <div class="container">
+            <div class="company-title">
+                <h3>
+                    <%= __('about-us-company-title') %>
+                </h3>
+                <small>
+                    <%= __('about-us-company-title-small') %></small>
+            </div>
+            <div class="introduct-contnet">
+                <div class="introduct-text">
+                    <p>
+                        <%= __('about-us-company-intro') %>
+                    </p>
+                </div>
+                <div class="introduct-img">
+                    <img src="/assets/imgs/about_us/company-img.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--company Introduction end-->
+
+    <!--bottom-nav-->
+    <div class="bottom-nav">
+        <div class="container">
+            <ul>
+                <li><a href="/<%= __('lang') %>/index.html"><%= __('nav-home') %></a></li>
+                <li><a href="/<%= __('lang') %>/about-us/index.html"><%= __('nav-about-us') %></a></li>
+                <li><a href="javascript:void(0);"><%= __('about-us-company-info') %></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--bottom-nav end-->
+    <footer>
+        <% var footer = require('./../components/footer.tpl') %>
+        <%= footer() %>
+    </footer>
+</body>
+
+</html>

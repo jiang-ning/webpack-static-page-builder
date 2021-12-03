@@ -1,0 +1,45 @@
+.en {
+    .footer {
+        ul.company-site {
+            li {
+                &:first-child {
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+
+    &.home .swiper .swiper-slide .swiper-content .s-content-item h2 {
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 10px;
+
+        }
+    }
+
+    &.home .swiper .swiper-slide .swiper-content .s-content-item p {
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 18px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &.product-service h4 {
+        @media screen and (max-width: 500px) {
+            overflow: hidden;
+        }
+    }
+
+    &.product-service .text-desc {
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    &.development-path .development-content .hidden-text {
+        display: none;
+    }
+}

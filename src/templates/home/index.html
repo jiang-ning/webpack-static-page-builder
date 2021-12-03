@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>
+        <%= __('home-title') %>
+    </title>
+    <link rel="icon" href="/assets/imgs/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/imgs/favicon.ico" type="image/x-icon" />
+</head>
+
+<body id="home" class="home loading-fixed <%= __('lang') %>">
+
+    <!-- loader -->
+    <div class="brand-loading"></div>
+
+    <header>
+        <% var header = require('./../components/header.tpl') %>
+        <%= header() %>
+    </header>
+
+    <!-- Home Swiper section-->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="mask">
+                    <img class="slide-img-pc" src="/assets/imgs/home/slider/home-kv1.jpg" alt="">
+                    <img class="slide-img-pad" src="/assets/imgs/home/slider/home-kv-pad01.jpg" alt="">
+                    <img class="slide-img-mobile" src="/assets/imgs/home/slider/home-kv-m01@2x.jpg" alt="">
+                </div>
+                <div class="swiper-content">
+                    <div class="container s-content-item">
+                        <h2>
+                            <%= __('home-slider1-title') %>
+                        </h2>
+                        <p>
+                            <%= __('home-slider1-desc') %>
+                        </p>
+                        <a href="about-us/" class="primary-btn bubble">
+                            <%= __('learn-more-text') %></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="mask">
+                    <img class="slide-img-pc" src="/assets/imgs/home/slider/home-kv2.jpg" alt="">
+                    <img class="slide-img-pad" src="/assets/imgs/home/slider/home-kv-pad02.jpg" alt="">
+                    <img class="slide-img-mobile" src="/assets/imgs/home/slider/home-kv-m02@2x.jpg" alt="">
+                </div>
+                <div class="swiper-content">
+                    <div class="container s-content-item">
+                        <h2>
+                            <%= __('home-slider2-title') %>
+                        </h2>
+                        <p>
+                            <%= __('home-slider2-desc') %>
+                        </p>
+                        <a href="product-service.html" class="primary-btn bubble">
+                            <%= __('learn-more-text') %></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="mask">
+                    <img class="slide-img-pc" src="/assets/imgs/home/slider/home-kv3.jpg" alt="">
+                    <img class="slide-img-pad" src="/assets/imgs/home/slider/home-kv-pad03.jpg" alt="">
+                    <img class="slide-img-mobile" src="/assets/imgs/home/slider/home-kv-m03@2x.jpg" alt="">
+                </div>
+                <div class="swiper-content">
+                    <div class="container s-content-item">
+                        <h2>
+                            <%= __('home-slider3-title') %>
+                        </h2>
+                        <p>
+                            <%= __('home-slider3-desc') %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination">
+            <ul></ul>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!--home kv section end-->
+
+    <!--Product & Service section-->
+    <div class="productnservice-section">
+        <div class="container home-container">
+            <h2>
+                <%= __('home-section-a-title') %>
+            </h2>
+            <p class="text-desc">
+                <%= __('home-section-a-desc') %>
+            </p>
+            <a class="primary-btn bubble" href="product-service.html">
+                <%= __('learn-more-text') %></a>
+        </div>
+    </div>
+    <!--Product & Service section end-->
+
+    <!--Partner section-->
+    <div class="home-container bg-p-btm">
+        <div class="container">
+            <h4>
+                <%= __('home-partner-title') %>
+            </h4>
+            <div class="partner-list partner-swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <ul>
+                            <li><img src="/assets/imgs/home/partner-img1@2x.png" alt="" /></li>
+                            <li><img src="/assets/imgs/home/partner-img1@2x.png" alt="" /></li>
+                            <li><img src="/assets/imgs/home/partner-img1@2x.png" alt="" /></li>
+                            <li><img src="/assets/imgs/home/partner-img1@2x.png" alt="" /></li>
+                            <li><img src="/assets/imgs/home/partner-img1@2x.png" alt="" /></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul>
+                            <li><img src="/assets/imgs/home/partner-img1@2x.png" alt="" /></li>
+                            <li><img src="/assets/imgs/home/partner-img1@2x.png" alt="" /></li>
+                            <li><img src="/assets/imgs/home/partner-img1@2x.png" alt="" /></li>
+                            <li><img src="/assets/imgs/home/partner-img1@2x.png" alt="" /></li>
+                            <li><img src="/assets/imgs/home/partner-img1@2x.png" alt="" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!--Partner section end-->
+
+    </div>
+
+    <footer>
+        <% var footer = require('./../components/footer.tpl') %>
+        <%= footer() %>
+    </footer>
+</body>
+
+</html>

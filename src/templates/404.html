@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>404</title>
+  <link rel="icon" href="/assets/imgs/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/imgs/favicon.ico" type="image/x-icon" />
+</head>
+<body class="page-not-found <%= __('lang') %>">
+  <header><% var header = require('./components/header.tpl') %><%= header() %></header>
+  <div class="return_btn_404">
+    <h3>Page not found.</h3>
+    <a href="/<%= __('lang')%>/"><%= __('return-btn-404')%></a>
+  </div>
+  <div class="content container"></div>
+  <footer><% var footer = require('./components/footer.tpl') %><%= footer() %></footer>
+</body>
+</html>

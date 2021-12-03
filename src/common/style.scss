@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+@import '~swiper/css/bundle';
+
+@import './common.scss';
+@import '../templates/home/home.scss';
+@import '../templates/about-us/about-us.scss';
+@import '../templates/about-us/company-culture/company-culture.scss';
+@import '../templates/about-us/development-path/development-path.scss';
+@import '../templates/product-service/product-service.scss';
+
+//en
+@import './en.scss';
+
+@import './fix.scss';
