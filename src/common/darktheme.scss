@@ -1,0 +1,40 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111;
+    }
+    header .navbar-fixed-top,
+    .home header .top-color,
+    .keyVisual-section .kv-nav.subnav-fixed-top {
+        background-color: #000c;
+        box-shadow: none;
+    }
+    .home header .top-color .nav > li > a,
+    .home header .top-color ul.lang-menu li a,
+    .home header .top-color ul.lang-menu li span,
+    .keyVisual-section,
+    .keyVisual-section .kv-nav.subnav-fixed-top {
+        color: #FFF9;
+    }
+    .home h2, .home .h2,
+    .home h4, .home .h4,
+    .home .text-desc,
+    .keyVisual-section .kv-nav .nav-container ul.nav-tab-list .active,
+    .about-us .company-introduct-section .introduct-text p,
+    .about-us .company-introduct-section .company-title h3, 
+    .about-us .company-introduct-section .company-title .h3,
+    .about-us.company-culture .company-culture-seciton .culture-list ul li .culture-item,
+    .about-us.development-path .development-section .development-content .year .develop-item .develop-desc {
+        color: #FFF;
+    }
+    .partner-list.partner-swiper-container .swiper-pagination .swiper-pagination-bullet {
+        background-color: #FFF;
+    }
+    .footer,
+    .bottom-nav,
+    .about-us .company-introduct-section .introduct-text {
+        background-color: #0009;
+    }
+    .bottom-nav ul {
+        border-color: #FFF3;
+    }
+}
