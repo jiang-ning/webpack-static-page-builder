@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "webpack-static-page-builder",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Webpack Static Page Builder",
   "main": "webpack.config.js",
   "scripts": {
