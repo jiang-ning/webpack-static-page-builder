@@ -9,6 +9,8 @@ Webpack static page builder is a pre-built multilingual website solution base on
 * One set of code to generate in-built multilingual sites, easy to maintainance.
 * Build-time localization is better for the SEO than the Run-time localization.
 
+### Demo
+- [See demo here](https://jiang-ning.github.io/webpack-static-page-builder/)
 ### Prerequisites
 
 - Install [Node.js](https://nodejs.org/) which includes [Node Package Manager](https://www.npmjs.com)
