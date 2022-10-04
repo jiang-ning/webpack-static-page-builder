@@ -6,9 +6,15 @@ if(typeof jQuery == 'undefined') {
 }
 
 let regx = `/^\/.*?\//g`;
+let prefixPath = '';
+
+// ------ for docs on github.io only
 if(window.location.pathname.includes('webpack-static-page-builder')){
-    regx = `/^\/.*?\/.*?\//g`; // remvoe 2 levels path, for docs on github.io only
+    regx = `/^\/.*?\/.*?\//g`; // remvoe 2 levels path
+    prefixPath = 'webpack-static-page-builder';
 }
+// ------
+
 let currentPageURL = window.location.pathname.replace(regx, "");
 let activekeyVisualText = $('.keyVisual-section .nav-tab-list li.active').text();
 let crrkeyVisualText = $('.keyVisual-section .nav-title span').text();
@@ -190,8 +196,8 @@ function doscroll() {
 }
 
 function changeLang() {
-    $('header .lang-menu li').eq(0).find('a').attr('href', '/zh_chs/' + currentPageURL);
-    $('header .lang-menu li').eq(1).find('a').attr('href', '/en/' + currentPageURL);
+    $('header .lang-menu li').eq(0).find('a').attr('href', prefixPath + '/zh_chs/' + currentPageURL);
+    $('header .lang-menu li').eq(1).find('a').attr('href', prefixPath + '/en/' + currentPageURL);
 }
 
 function backToTop() {
