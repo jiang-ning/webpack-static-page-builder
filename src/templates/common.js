@@ -5,7 +5,11 @@ if(typeof jQuery == 'undefined') {
     window.$ = $;
 }
 
-let currentPageURL = window.location.pathname.replace(/^\/.*?\//g, "");
+let regx = `/^\/.*?\//g`;
+if(window.location.pathname.includes('webpack-static-page-builder')){
+    regx = `/^\/.*?\/.*?\//g`; // remvoe 2 levels path, for docs on github.io only
+}
+let currentPageURL = window.location.pathname.replace(regx, "");
 let activekeyVisualText = $('.keyVisual-section .nav-tab-list li.active').text();
 let crrkeyVisualText = $('.keyVisual-section .nav-title span').text();
 
