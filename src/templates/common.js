@@ -5,17 +5,6 @@ if(typeof jQuery == 'undefined') {
     window.$ = $;
 }
 
-let regx = `/^\/.*?\//g`;
-let prefixPath = '';
-
-// ------ for docs on github.io only
-if(window.location.pathname.includes('webpack-static-page-builder')){
-    regx = `/^\/.*?\/.*?\//g`; // remvoe 2 levels path
-    prefixPath = 'webpack-static-page-builder';
-}
-// ------
-
-let currentPageURL = window.location.pathname.replace(regx, "");
 let activekeyVisualText = $('.keyVisual-section .nav-tab-list li.active').text();
 let crrkeyVisualText = $('.keyVisual-section .nav-title span').text();
 
@@ -25,7 +14,7 @@ $(window).on('load', function () {
 
     doscroll();
     backToTop();
-    changeLang();
+    updateLangSwitcher();
 
     // site address
     $('.company-site a').on('click', function () {
@@ -195,9 +184,17 @@ function doscroll() {
     }
 }
 
-function changeLang() {
-    $('header .lang-menu li').eq(0).find('a').attr('href', prefixPath + '/zh_chs/' + currentPageURL);
-    $('header .lang-menu li').eq(1).find('a').attr('href', prefixPath + '/en/' + currentPageURL);
+function updateLangSwitcher() {
+    let path = window.location.pathname;
+
+    if(path.includes('/en')) {
+        path = path.replace('/en', '/zh_chs');
+        $('header .lang-menu li').eq(0).find('a').attr('href', path);
+    }
+    if(path.includes('/zh_chs')) {
+        path = path.replace('/zh_chs', '/en');
+        $('header .lang-menu li').eq(1).find('a').attr('href', path);
+    }
 }
 
 function backToTop() {

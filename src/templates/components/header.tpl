@@ -15,8 +15,8 @@
         <li class="product-service"><a href="/<%= __('lang') %>/product-service.html"><%= __('nav-product-service') %></a></li>
         <li>
             <ul class="lang-menu">
-                <li><a href="javascript:void(0)"><%= __('nav-lang-zh') %></a> <span>|</span></li>
-                <li><a href="javascript:void(0)"><%= __('nav-lang-en') %></a></li>
+                <li><a href><%= __('nav-lang-zh') %></a> <span>|</span></li>
+                <li><a href><%= __('nav-lang-en') %></a></li>
             </ul>
         </li>
       </ul>
